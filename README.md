@@ -33,10 +33,9 @@ ARGS:
     <FILE>    specifies the input JSON file
 ```
 
-For example:
+For example, if the input file `/tmp/a.txt` contains:
 
-```
-$ cat /tmp/a.txt 
+```json
 {
   "items": [
     { "name": "Xavier", "age": 33, "kids": ["Andrew", "Barbara", "Charlie"] },
@@ -47,7 +46,11 @@ $ cat /tmp/a.txt
   "date": "2019-02-09",
   "temperature": 17
 }
-$ json-describe /tmp/a.txt 
+```
+
+then the result of running is `json-describe /tmp/a.txt` is:
+
+```json
 {
     "data": Array (len 3) [
         Boolean,
