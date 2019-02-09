@@ -1,0 +1,15 @@
+[package]
+name = "json-describe"
+version = "0.1.0"
+authors = ["Cameron McCormack <cam@mcc.id.au>"]
+license = "MPL-2.0"
+repository = "https://github.com/heycam/json-describe"
+description = "Read a JSON file and output a generalized description of its structure"
+edition = "2018"
+
+[dependencies]
+clap = "2.32.0"
+json-tools = "1.0.1"
+
+[patch.crates-io]
+json-tools = { git = "https://github.com/heycam/json-tools", branch = "num-str-fixes" }
