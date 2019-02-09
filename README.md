@@ -50,7 +50,7 @@ For example, if the input file `/tmp/a.txt` contains:
 
 then the result of running is `json-describe /tmp/a.txt` is:
 
-```json
+```
 {
     "data": Array (len 3) [
         Boolean,
